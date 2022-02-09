@@ -1,12 +1,19 @@
-// eslint-disable-next-line
+import React from 'react';
 import Calculator from './components/calculator';
 
-function App() {
-  return (
-    <div className="App">
-      <Calculator />
-    </div>
-  );
+class App extends React.Component {
+  constructor(drops) {
+    super(drops);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Calculator />
+      </div>
+    );
+  }
 }
 
 export default App;
