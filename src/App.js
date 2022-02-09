@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import Calculator from './components/calculator';
 
 function App() {
