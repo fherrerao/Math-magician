@@ -19,7 +19,6 @@ Math Magicians! Let's make basic operations. It is a Single Page App.
 
 [Live Demo Link](https://fherrerao.github.io/Math-magician/)
 
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
