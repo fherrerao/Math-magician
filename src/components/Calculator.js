@@ -1,4 +1,5 @@
 import React from 'react';
+import './calculator.css';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -8,27 +9,27 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <div className="container-calculator">
-        <div>0</div>
-        <button type="button" className="button">AC</button>
-        <button type="button" className="button">+/-</button>
-        <button type="button" className="button">%</button>
-        <button type="button" className="button">÷</button>
-        <button type="button" className="button">7</button>
-        <button type="button" className="button">8</button>
-        <button type="button" className="button">9</button>
-        <button type="button" className="button">x</button>
-        <button type="button" className="button">4</button>
-        <button type="button" className="button">5</button>
-        <button type="button" className="button">6</button>
-        <button type="button" className="button">-</button>
-        <button type="button" className="button">1</button>
-        <button type="button" className="button">2</button>
-        <button type="button" className="button">3</button>
-        <button type="button" className="button">+</button>
-        <button type="button" className="button">0</button>
-        <button type="button" className="button">.</button>
-        <button type="button" className="button">=</button>
+      <div className="container-calculator container">
+        <div className="display-result">0</div>
+        <button type="button" className="btn-gray">AC</button>
+        <button type="button" className="btn-gray">+/-</button>
+        <button type="button" className="btn-gray">%</button>
+        <button type="button" className="btn-orange">÷</button>
+        <button type="button" className="btn-gray">7</button>
+        <button type="button" className="btn-gray">8</button>
+        <button type="button" className="btn-gray">9</button>
+        <button type="button" className="btn-orange">x</button>
+        <button type="button" className="btn-gray">4</button>
+        <button type="button" className="btn-gray">5</button>
+        <button type="button" className="btn-gray">6</button>
+        <button type="button" className="btn-orange">-</button>
+        <button type="button" className="btn-gray">1</button>
+        <button type="button" className="btn-gray">2</button>
+        <button type="button" className="btn-gray">3</button>
+        <button type="button" className="btn-orange">+</button>
+        <button type="button" className="bottom-0 btn-gray">0</button>
+        <button type="button" className="btn-gray">.</button>
+        <button type="button" className="btn-orange">=</button>
       </div>
     );
   }
