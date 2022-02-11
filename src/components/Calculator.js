@@ -1,52 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import Button from './Button';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
-    this.btnOnClick = this.btnOnClick.bind(this);
-  }
+const Calculator = () => {
+  const [calc, setCalc] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
 
-  btnOnClick = (event) => {
-    this.setState((state) => calculate(state, event.target.textContent));
-  }
+  const btnClick = (event) => {
+    setCalc(calculate(calc, event.target.textContent));
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <div className="container-calculator container">
-        <div className="display-result">
-          {total}
-          {operation}
-          {next}
-        </div>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">AC</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">+/-</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">%</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">÷</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">7</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">8</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">9</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">x</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">4</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">5</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">6</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">-</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">1</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">2</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">3</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">+</button>
-        <button onClick={this.btnOnClick} type="button" className="bottom-0 btn-gray">0</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">.</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">=</button>
+  return (
+    <div className="container-calculator container">
+      <div className="display-result">
+        {calc.total}
+        {calc.operation}
+        {calc.next}
       </div>
-    );
-  }
-}
+
+      <Button btnClick={btnClick} buttonName="AC" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="+/-" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="%" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="÷" buttonClasses="btn-orange" />
+      <Button btnClick={btnClick} buttonName="7" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="8" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="9" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="x" buttonClasses="btn-orange" />
+      <Button btnClick={btnClick} buttonName="4" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="5" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="6" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="-" buttonClasses="btn-orange" />
+      <Button btnClick={btnClick} buttonName="1" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="2" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="3" buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="+" buttonClasses="btn-orange" />
+      <Button btnClick={btnClick} buttonName="0" buttonClasses="btn-gray bottom-0" />
+      <Button btnClick={btnClick} buttonName="." buttonClasses="btn-gray" />
+      <Button btnClick={btnClick} buttonName="=" buttonClasses="btn-orange" />
+    </div>
+  );
+};
 
 export default Calculator;
