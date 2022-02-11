@@ -1,5 +1,6 @@
 import React from 'react';
 import calculate from '../logic/calculate';
+import Button from './Button';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -25,25 +26,26 @@ class Calculator extends React.Component {
           {operation}
           {next}
         </div>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">AC</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">+/-</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">%</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">÷</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">7</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">8</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">9</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">x</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">4</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">5</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">6</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">-</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">1</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">2</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">3</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">+</button>
-        <button onClick={this.btnOnClick} type="button" className="bottom-0 btn-gray">0</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-gray">.</button>
-        <button onClick={this.btnOnClick} type="button" className="btn-orange">=</button>
+
+        <Button btnClick={this.btnOnClick} buttonName="AC" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="+/-" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="%" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="÷" buttonClasses="btn-orange" />
+        <Button btnClick={this.btnOnClick} buttonName="7" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="8" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="9" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="x" buttonClasses="btn-orange" />
+        <Button btnClick={this.btnOnClick} buttonName="4" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="5" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="6" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="-" buttonClasses="btn-orange" />
+        <Button btnClick={this.btnOnClick} buttonName="1" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="2" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="3" buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="+" buttonClasses="btn-orange" />
+        <Button btnClick={this.btnOnClick} buttonName="0" buttonClasses="btn-gray bottom-0" />
+        <Button btnClick={this.btnOnClick} buttonName="." buttonClasses="btn-gray" />
+        <Button btnClick={this.btnOnClick} buttonName="=" buttonClasses="btn-orange" />
       </div>
     );
   }
