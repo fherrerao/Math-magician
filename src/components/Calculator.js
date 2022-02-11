@@ -3,7 +3,6 @@ import calculate from '../logic/calculate';
 import Button from './Button';
 
 const Calculator = () => {
-
   const [calc, setCalc] = useState({
     total: 0,
     next: null,
@@ -12,7 +11,7 @@ const Calculator = () => {
 
   const btnClick = (event) => {
     setCalc(calculate(calc, event.target.textContent));
-  }
+  };
 
   return (
     <div className="container-calculator container">
@@ -43,7 +42,6 @@ const Calculator = () => {
       <Button btnClick={btnClick} buttonName="=" buttonClasses="btn-orange" />
     </div>
   );
-
 };
 
 export default Calculator;
