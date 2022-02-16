@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: brown;
+}
+
+.header h1 {
+  font-family: cursive;
+  font-size: 3rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  border-bottom: 1px solid brown;
+}
+
+.link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.6rem;
+  color: black;
+}
+
+.link:hover {
+  background-color: brown;
+  color: aliceblue;
+  transform: scale(1.1);
+}
