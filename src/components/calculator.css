@@ -45,3 +45,11 @@
   font-weight: 700;
   border: 0.1px rgb(197, 192, 192) solid;
 }
+
+.calculator {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
