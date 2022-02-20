@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.7359cde3.css",
-    "main.js": "/react-gh-pages/static/js/main.06735bcb.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.7359cde3.css.map": "/react-gh-pages/static/css/main.7359cde3.css.map",
-    "main.06735bcb.js.map": "/react-gh-pages/static/js/main.06735bcb.js.map"
+    "main.css": "/fherrerao/Math-magician/static/css/main.e65f8f8c.css",
+    "main.js": "/fherrerao/Math-magician/static/js/main.ff0894bb.js",
+    "index.html": "/fherrerao/Math-magician/index.html",
+    "main.e65f8f8c.css.map": "/fherrerao/Math-magician/static/css/main.e65f8f8c.css.map",
+    "main.ff0894bb.js.map": "/fherrerao/Math-magician/static/js/main.ff0894bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.7359cde3.css",
-    "static/js/main.06735bcb.js"
+    "static/css/main.e65f8f8c.css",
+    "static/js/main.ff0894bb.js"
   ]
 }
