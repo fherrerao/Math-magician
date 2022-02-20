@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> Math Magicians is my first React Project. The objective is to understand how React works. 
+> Math Magicians is my first React project. The goal is to understand how this framework works. I used React Router to interact between the different tabs of the project. Use of `calculate.js` and `operator.js` files for calculator logic.
 > 
 ![calculatorImage](https://user-images.githubusercontent.com/91301423/153205643-cc65174b-3d9a-43e2-81bf-d66c85312fea.png)
 
