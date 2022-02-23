@@ -16,7 +16,8 @@ Math Magicians! Let's make basic operations. It is a Single Page App.
 
 ## Live Demo
 
-[Live Demo Link](https://fherrerao.github.io/Math-magician/)
+[GitHub-Pages Link](https://fherrerao.github.io/Math-magician/) 
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/27cf5441-21e5-458b-b88e-e020e7ce2309/deploy-status)](https://matth-magician.netlify.app/)
 
 ## Getting Started
