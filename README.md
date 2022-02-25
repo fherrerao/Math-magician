@@ -16,9 +16,11 @@ Math Magicians! Let's make basic operations. It is a Single Page App.
 
 ## Live Demo
 
-[GitHub-Pages Link](https://fherrerao.github.io/Math-magician/) 
+- [GH-Pages](https://fherrerao.github.io/Math-magician/) 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/27cf5441-21e5-458b-b88e-e020e7ce2309/deploy-status)](https://matth-magician.netlify.app/)
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/27cf5441-21e5-458b-b88e-e020e7ce2309/deploy-status)](https://matth-magician.netlify.app/)
+
+- [Heroku](https://math-magician-fh.herokuapp.com/)
 
 ## Getting Started
 
