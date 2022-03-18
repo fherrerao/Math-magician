@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import './components/calculator.css';
 import Header from './components/Header';
@@ -9,14 +9,14 @@ import Quote from './components/Quote';
 function App() {
   return (
     <div>
-      <Router>
+      <HashRouter basename="/">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/quote" element={<Quote />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
